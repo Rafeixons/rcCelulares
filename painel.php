@@ -95,19 +95,26 @@ if (!isset($_SESSION['idusuario'])) {
 
                 </div>
 
-                <div class="card-body">
+                <div class="card-body d-flex-center">
 
-                    <a href="usuarios.php" class="btn btn-success">
+                    <a href="atualizarUsuario.php" class="btn btn-success">
                         Gerenciar Usuários
                     </a>
 
-                    <a href="produtos.php" class="btn btn-primary">
+                    <a href="atualizarProdutos.php" class="btn btn-primary">
                         Gerenciar Produtos
                     </a>
 
+
                 </div>
 
+                <a href="logout.php" class="btn btn-primary">
+                    Sair
+                </a>
+
             </div>
+
+
 
         <?php endif; ?>
 

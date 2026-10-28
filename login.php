@@ -30,7 +30,7 @@ $erro = isset($_GET["erro"]);
         <div class="card shadow-sm w-100" style="max-width: 420px;">
             <div class="card-body p-4">
                 <!-- Mostra erro se o login estiver incorreto -->
-                 
+
                 <?php if ($erro): ?>
 
                     <div class="alert alert-danger">
@@ -40,6 +40,10 @@ $erro = isset($_GET["erro"]);
 
                 <div class="row ">
                     <div class="col">
+
+                    <h2>
+                        Login
+                    </h2>
                         <form action="autenticar.php" method="POST">
                             <div class="mb-3">
                                 <label class="form-label">Email</label>
@@ -53,16 +57,17 @@ $erro = isset($_GET["erro"]);
                             </div>
 
                             <!-- Botão Entrar -->
-                            <button type="submit" class="btn btn-primary w-100">
+                            <button type="submit" class="btn btn-outline-primary">
                                 Entrar
                             </button>
-                            <a href="cadastroUsuario.php" class="btn btn-outline-primary">
-                                Cadastre-se
-                            </a>
-                            <a href="index.html" class="btn btn-outline-primary">
-                                Voltar ao site
-                            </a>
-
+                            
+                                <a href="cadastroUsuario.php" class="btn btn-outline-primary">
+                                    Cadastre-se
+                                </a>
+                                <a href="index.html" class="btn btn-outline-primary">
+                                    Voltar ao site
+                                </a>
+                            
                         </form>
                         <!-- Voltar ao site -->
 
